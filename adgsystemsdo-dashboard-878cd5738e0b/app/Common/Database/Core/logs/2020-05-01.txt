@@ -1,0 +1,3 @@
+Time : 10:20:27
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_desechables_nunez.companies' doesn't exist
+Raw SQL : SELECT company_id from adgsoft_desechables_nunez.companies limit 1

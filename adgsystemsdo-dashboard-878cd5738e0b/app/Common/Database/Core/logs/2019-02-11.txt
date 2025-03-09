@@ -1,0 +1,2685 @@
+Time : 15:59:11
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header yup
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND yup.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND oh.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:56:46
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header po
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:54:12
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:54:07
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND c.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND c.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND c.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:54:06
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND c.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND c.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND c.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:53:59
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'z.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND z.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND z.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND z.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:53:58
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'z.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND z.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND z.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND z.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:53:30
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hs.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header as hs
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND hs.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND hs.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND hs.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:53:30
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hs.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header as hs
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND hs.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND hs.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND hs.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:52:30
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIM' at line 31
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+//        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:52:29
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIM' at line 31
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+//        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:52:29
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIM' at line 31
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+//        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:52:29
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIM' at line 31
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+//        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:52:28
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIM' at line 31
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+//        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:52:28
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIM' at line 31
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+//        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:52:27
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIM' at line 31
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+//        
+//        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:53
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND s.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND s.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND s.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:52
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND s.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND s.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND s.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:40
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND t.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND t.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND t.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:27
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oh.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND oh.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND oh.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND oh.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:27
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oh.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND oh.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND oh.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND oh.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:26
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'oh.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND oh.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND oh.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND oh.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:06
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND c.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND c.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND c.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:05
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND c.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND c.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND c.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:05
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND c.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND c.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND c.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:51:04
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.seller_code' in 'where clause'
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND c.seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND c.seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND c.seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:50:28
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:50:28
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:48:31
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:48:09
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:48:09
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:48:08
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:47:30
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:45:08
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:45:07
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:45:02
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:45:01
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:44:10
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:39:42
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:39:15
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:38:16
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:38:05
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:37:47
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:37:03
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:36:36
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:35:42
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:29:02
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:15:25
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:14:29
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:13:30
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:13:08
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:12:43
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:11:59
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:11:31
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:11:07
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:09:36
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:08:11
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:06:53
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:06:21
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:06:15
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 15:01:28
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 14:41:29
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 14:41:26
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 14:38:28
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 14:37:15
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 14:36:06
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 14:35:48
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 14:35:42
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 14:31:13
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 11:57:56
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 11:57:48
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 11:50:16
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 11:49:04
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(02 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(02 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(02 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 11:47:56
+SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'seller_code' in where clause is ambiguous
+Raw SQL : SELECT c.customer_code,
+        c.customer_name,
+        t.vendido,
+        c.seller_code,
+        s.seller_name,
+        z.cantidad cantidad_ventas
+        FROM customers c,   (
+                              SELECT SUM(order_gross_amount + order_tax_amount - order_discount_amount) vendido, customer_code
+                              FROM orders_header
+                              WHERE company_id IN (0001)
+                              AND order_date BETWEEN :start_date AND :end_date 
+                               AND seller_code  IN(01 )
+                            
+                              GROUP BY customer_code
+                            ) t, 
+                            (
+                            SELECT COUNT(*) cantidad, customer_code
+                            FROM orders_header oh
+                            WHERE oh.company_id IN (0001)
+                            AND order_date BETWEEN :start_date2 AND :end_date2
+                            AND seller_code  IN(01 )
+                            
+                            GROUP BY customer_code
+                            ) z,
+                            sellers s
+        WHERE c.company_id = 0001
+        AND s.seller_code = c.seller_code
+        AND s.company_id = 0001
+        AND t.customer_code = c.customer_code
+        AND z.customer_code = c.customer_code
+        
+        AND seller_code  IN(01 )
+        ORDER BY t.vendido DESC LIMIT 10
+
+Time : 11:21:22
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pedroracing.companies' doesn't exist
+Raw SQL : SELECT company_id from adgsoft_pedroracing.companies limit 1
+
+Time : 11:12:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pedroracing.companies' doesn't exist
+Raw SQL : SELECT company_id from adgsoft_pedroracing.companies limit 1

@@ -1,0 +1,226 @@
+Time : 15:43:56
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'company_serial_number' in 'field list'
+Raw SQL : UPDATE adgsoft_maps.adg_users
+                  SET user_name = :user_name,
+                  user_first_name = :user_first_name,
+                  user_password = :user_password,
+                  user_database = :user_database,
+                  company_serial_number = :company_serial_number,
+                  company_host = :company_host,
+                  client_id = :client_id
+                  WHERE user_id = :user_id
+
+Time : 15:43:33
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'company_serial_number' in 'field list'
+Raw SQL : UPDATE adgsoft_maps.adg_users
+                  SET user_name = :user_name,
+                  user_first_name = :user_first_name,
+                  user_password = :user_password,
+                  user_database = :user_database,
+                  company_serial_number = :company_serial_number,
+                  company_host = :company_host,
+                  client_id = :client_id
+                  WHERE user_id = :user_id
+
+Time : 15:32:51
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:32:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:32:49
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:31:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:31:27
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:31:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:29:27
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:29:24
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:28:39
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM .companies c
+
+Time : 15:16:59
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture,client_id)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture ,:client_id)
+
+Time : 15:16:56
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture,client_id)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture ,:client_id)
+
+Time : 15:15:50
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture,client_id)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture  ,:client_id)
+
+Time : 15:15:45
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture,client_id)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture  ,:client_id)
+
+Time : 15:15:37
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture,client_id)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture  ,:client_id)
+
+Time : 15:15:11
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'company_serial_number' in 'field list'
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture, company_serial_number, company_host,client_id)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture,
+                    :company_serial_number, :company_host,:client_id)
+
+Time : 15:14:55
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'company_serial_number' in 'field list'
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture, company_serial_number, company_host,client_id)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture,
+                    :company_serial_number, :company_host,:client_id)
+
+Time : 14:48:01
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.company_host' in 'field list'
+Raw SQL : SELECT c.*, CONCAT(u.user_name, " - ",u.user_first_name) user , u.user_database, u.company_host
+                   FROM adgsoft_maps.clients c
+                   LEFT JOIN adgsoft_maps.adg_users u ON u.user_id = c.admin_user_id
+
+Time : 14:48:00
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.company_host' in 'field list'
+Raw SQL : SELECT c.*, CONCAT(u.user_name, " - ",u.user_first_name) user , u.user_database, u.company_host
+                   FROM adgsoft_maps.clients c
+                   LEFT JOIN adgsoft_maps.adg_users u ON u.user_id = c.admin_user_id
+
+Time : 14:47:51
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.name' in 'field list'
+Raw SQL : SELECT a.*, c.name client_name,c.client_id 
+                                        FROM adgsoft_maps.adg_users  a
+                                        LEFT JOIN adgsoft_maps.clients c ON c.client_id = a.client_id
+
+Time : 14:40:38
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3
+Raw SQL : SELECT a.*, c.name  
+                                        FROM adgsoft_maps.adg_users  a
+                                        LEFT JOIN adgsoft_maps.
+
+Time : 14:40:33
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3
+Raw SQL : SELECT a.*, c.name  
+                                        FROM adgsoft_maps.adg_users  a
+                                        LEFT JOIN adgsoft_maps.
+
+Time : 11:11:48
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : UPDATE adgsoft_maps.adg_users
+                  SET user_name = :user_name,
+                  user_first_name = :user_first_name,
+                  user_password = :user_password,
+                  user_database = :user_database,
+                  company_serial_number = :company_serial_number,
+                  company_host = :company_host
+                  WHERE user_id = :user_id
+
+Time : 11:10:37
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE adgsoft_maps.adg_users
+                  SET user_name = :user_Name,
+                  user_first_name = :user_first_name,
+                  user_password = :user_password,
+                  user_database = :user_database,
+                  company_serial_number = :company_serial_number,
+                  company_host = :company_host
+                  WHERE user_id = :user_id
+
+Time : 11:10:01
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE adgsoft_maps.adg_users
+                  SET user_name = :user_Name,
+                  user_first_name = :user_first_name,
+                  user_password = :user_password,
+                  user_database = :user_database,
+                  company_serial_number = :company_serial_number,
+                  company_host = :company_host
+                  WHERE user_id = :user_id
+
+Time : 11:09:31
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE adgsoft_maps.adg_users
+                  SET user_name = :user_Name,
+                  user_first_name = :user_first_name,
+                  user_password = :user_password,
+                  user_database = :user_database,
+                  company_serial_number = :company_serial_number,
+                  company_host = :company_host
+                  WHERE user_id = :user_id
+
+Time : 11:08:18
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE adgsoft_maps.adg_users
+                  SET user_name = :user_Name,
+                  user_first_name = :user_first_name,
+                  user_password = :user_password,
+                  user_database = :user_database,
+                  company_serial_number = :company_serial_number,
+                  company_host = :company_host
+                  WHERE user_id = :user_id
+
+Time : 11:07:59
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE adgsoft_maps.adg_users
+                  SET user_name = :user_Name,
+                  user_first_name = :user_first_name,
+                  user_password = :user_password,
+                  user_database = :user_database,
+                  company_serial_number = :company_serial_number,
+                  company_host = :company_host
+                  WHERE user_id = :user_id
+
+Time : 08:38:13
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Raw SQL : SELECT * FROM users WHERE user_id = :id

@@ -1,0 +1,9 @@
+Time : 19:54:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_desechables_nunez.sellers' doesn't exist
+Raw SQL : SELECT 
+			seller_id, 
+			seller_code, 
+			seller_name, 
+			seller_phone 
+			FROM sellers 
+			WHERE company_id = :company_id ORDER BY seller_code ASC

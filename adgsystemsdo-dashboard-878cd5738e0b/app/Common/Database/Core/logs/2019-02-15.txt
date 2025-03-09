@@ -1,0 +1,11 @@
+Time : 11:55:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT company_id from adgsoft_pyf.companies limit 1
+
+Time : 10:20:59
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT company_id from adgsoft_pyf.companies limit 1
+
+Time : 09:52:05
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT company_id from adgsoft_pyf.companies limit 1

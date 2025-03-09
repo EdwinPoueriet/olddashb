@@ -1,0 +1,7 @@
+Time : 16:47:48
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_managersdm.adg_users' doesn't exist
+Raw SQL : SELECT
+        user_id, client_id,two_factor_secret
+        FROM adg_users
+        WHERE user_name = :user_name 
+        AND user_password = :user_password

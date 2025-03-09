@@ -1,0 +1,8 @@
+{
+  "mode": "debug",
+  "env": "local",
+
+  "manager_mode":  "debug",
+  "manager_env": "local"
+
+}

@@ -1,0 +1,9 @@
+Time : 15:26:49
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pacheco.sellers' doesn't exist
+Raw SQL : SELECT 
+			seller_id, 
+			seller_code, 
+			seller_name, 
+			seller_phone 
+			FROM sellers 
+			WHERE company_id = :company_id ORDER BY seller_code ASC

@@ -1,0 +1,17 @@
+{
+
+  "local" : {
+    "host": "localhost",
+    "user": "homestead",
+    "password": "secret",
+    "dbname": "adgsoft_maps"
+  },
+
+  "production": {
+    "host": "localhost",
+    "user": "adgsoft",
+    "password": "*1010537-130778442*",
+    "dbname": "adgsoft_managersdm"
+  }
+
+}

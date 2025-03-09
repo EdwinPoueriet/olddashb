@@ -1,0 +1,509 @@
+Time : 16:29:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_test.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_test.companies c
+
+Time : 16:29:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_venecia.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_venecia.companies c
+
+Time : 16:29:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:29:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:29:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:29:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:29:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:28:57
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_test.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_test.companies c
+
+Time : 16:28:57
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_venecia.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_venecia.companies c
+
+Time : 16:28:57
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:28:57
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:28:57
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:28:57
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:28:57
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:28:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_test.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_test.companies c
+
+Time : 16:28:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_venecia.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_venecia.companies c
+
+Time : 16:28:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:28:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:28:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:28:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:28:52
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:28:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_test.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_test.companies c
+
+Time : 16:28:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_venecia.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_venecia.companies c
+
+Time : 16:28:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:28:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:28:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:28:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:28:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:27:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_venecia.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_venecia.companies c
+
+Time : 16:27:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:27:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:27:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:27:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:27:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:23:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_venecia.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_venecia.companies c
+
+Time : 16:23:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:23:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:23:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:23:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:23:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:23:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_venecia.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_venecia.companies c
+
+Time : 16:23:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:23:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:23:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:23:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:23:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:23:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:23:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:23:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:23:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:23:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:22:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_plasticourena.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_plasticourena.companies c
+
+Time : 16:22:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:22:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:22:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:22:47
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:21:01
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:21:01
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:21:01
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:21:01
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:20:34
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_iberg.companies c
+
+Time : 16:20:34
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:20:34
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:20:34
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:19:55
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:19:55
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:19:55
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:18:45
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:18:45
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:18:45
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:18:35
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_grupoactus.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_grupoactus.companies c
+
+Time : 16:18:35
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:18:35
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:17:27
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:17:27
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:17:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_cleon.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_cleon.companies c
+
+Time : 16:17:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:16:22
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:15:11
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:14:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:14:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:14:18
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:14:17
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:14:14
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:13:35
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:12:46
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:12:33
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:11:43
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:11:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:09:41
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:09:41
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:09:11
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:09:11
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:08:32
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:08:32
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:06:31
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 16:06:31
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_pyf.companies' doesn't exist
+Raw SQL : SELECT c.company_name, c.company_id
+                   FROM adgsoft_pyf.companies c
+
+Time : 15:45:10
+SQLSTATE[HY000]: General error: 1364 Field 'api_key' doesn't have a default value
+Raw SQL : INSERT INTO adgsoft_maps.clients (client_name,client_serial_number,client_host,client_database) 
+                      VALUES (:namee,:serial,:host, :db)
+
+Time : 15:44:33
+SQLSTATE[HY000]: General error: 1364 Field 'api_key' doesn't have a default value
+Raw SQL : INSERT INTO adgsoft_maps.clients (client_name,client_serial_number,client_host,client_database) 
+                      VALUES (:namee,:serial,:host, :db)
+
+Time : 15:43:43
+SQLSTATE[HY000]: General error: 1364 Field 'api_key' doesn't have a default value
+Raw SQL : INSERT INTO adgsoft_maps.clients (client_name,client_serial_number,client_host,client_database) 
+                      VALUES (:namee,:serial,:host, :db)
+
+Time : 15:42:39
+SQLSTATE[HY000]: General error: 1364 Field 'api_key' doesn't have a default value
+Raw SQL : INSERT INTO adgsoft_maps.clients (client_name,client_serial_number,client_host,client_database) 
+                      VALUES (:namee,:serial,:host, :db)
+
+Time : 15:40:21
+SQLSTATE[HY000]: General error: 1364 Field 'api_key' doesn't have a default value
+Raw SQL : INSERT INTO adgsoft_maps.clients (client_name,client_serial_number,client_host,client_database) 
+                      VALUES (:namee,:serial,:host, :db)

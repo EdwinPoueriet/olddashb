@@ -1,0 +1,140 @@
+Time : 17:05:27
+SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'user_password' at row 1
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture, company_serial_number, company_host)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture,
+                    :company_serial_number, :company_host)
+
+Time : 17:04:57
+SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'user_password' at row 1
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture, company_serial_number, company_host)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture,
+                    :company_serial_number, :company_host)
+
+Time : 17:04:56
+SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'user_password' at row 1
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture, company_serial_number, company_host)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture,
+                    :company_serial_number, :company_host)
+
+Time : 17:04:25
+SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'user_password' at row 1
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture, company_serial_number, company_host)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture,
+                    :company_serial_number, :company_host)
+
+Time : 17:04:20
+SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'user_password' at row 1
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture, company_serial_number, company_host)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture,
+                    :company_serial_number, :company_host)
+
+Time : 17:04:08
+SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'user_password' at row 1
+Raw SQL : INSERT INTO adgsoft_maps.adg_users
+                  (user_name,user_password,user_database,user_type,user_company, user_first_name,
+                   user_devices,user_profile_picture, company_serial_number, company_host)
+                   VALUES (:user_name,:user_password,:user_database,:user_type,:user_company, 
+                   :user_first_name,:user_devices,:user_profile_picture,
+                    :company_serial_number, :company_host)
+
+Time : 09:52:53
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO adgsoft_managersdm.scripts(name,content) VALUES (:name,:content)
+ON DUPLICATE KEY UPDATE content = :content
+
+Time : 09:18:02
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = 3' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = 3
+
+Time : 09:17:37
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = ?' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = :cred
+
+Time : 09:17:34
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = ?' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = :cred
+
+Time : 09:15:21
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = ?' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = :cred
+
+Time : 09:15:07
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = ?' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = :cred
+
+Time : 09:13:37
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = ?' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = :cred
+
+Time : 09:13:16
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = ?' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = :cred
+
+Time : 09:13:07
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = ?' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = :cred
+
+Time : 09:11:44
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE credential_id = ?' at line 2
+Raw SQL : UPDATE adgsoft_maps.credentials 
+                   SET maps = 1, maps_sellers = 1, maps_customers = 1, maps_routes = 1, reports = 1, reports_distribution = 1, reports_dropsize = 1, registers = 1, registers_users = 1, registers_settings = 1, registers_companies = 1, registers_costcenters = 1, registers_warehouses = 1, registers_banks = 1, registers_sellers = 1, registers_collectors = 1, registers_areas = 1, registers_routes = 1, registers_countries = 1, registers_provinces = 1, registers_cities = 1, registers_sectors = 1, registers_brands = 1, registers_classifications = 1, registers_products = 1, registers_product_families = 1, registers_product_formats = 1, registers_product_groups = 1, registers_product_types = 1, registers_product_warehouses = 1, registers_product_subclassifications = 1, registers_types_price = 1, registers_types_units = 1, registers_import = 1, registers_customers = 1, authorization = 1, authorization_ri = 1, authorization_ra = 1, authorization_dv = 1, authorization_df = 1, WHERE credential_id = :cred
+
+Time : 08:55:53
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'adgsoft_maps' in 'where clause'
+Raw SQL : SELECT *
+FROM `INFORMATION_SCHEMA`.`COLUMNS` 
+WHERE `TABLE_SCHEMA`= adgsoft_maps
+        AND `TABLE_NAME`= `credentials`
+
+Time : 08:55:36
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'adgsoft_maps' in 'where clause'
+Raw SQL : SELECT *
+FROM `INFORMATION_SCHEMA`.`COLUMNS` 
+WHERE `TABLE_SCHEMA`= `adgsoft_maps`
+        AND `TABLE_NAME`= `credentials`
+
+Time : 08:55:17
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'adgsoft_maps' in 'where clause'
+Raw SQL : SELECT *
+FROM `INFORMATION_SCHEMA`.`COLUMNS` 
+WHERE `TABLE_SCHEMA`= `adgsoft_maps`
+        AND `TABLE_NAME`= `credentials`
+
+Time : 08:35:36
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT * from adgsoft_iberg.companies
+
+Time : 08:35:26
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT * from adgsoft_iberg.companies
+
+Time : 08:35:25
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT * from adgsoft_iberg.companies
+
+Time : 08:33:51
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adgsoft_iberg.companies' doesn't exist
+Raw SQL : SELECT * from adgsoft_iberg.companies

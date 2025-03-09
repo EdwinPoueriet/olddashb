@@ -1,0 +1,8 @@
+env.json
+.idea
+app/cache/*
+composer.lock
+managersdm/cache/*
+node_modules/
+vendor/
+managersdm/Common/Database/Core/logs/

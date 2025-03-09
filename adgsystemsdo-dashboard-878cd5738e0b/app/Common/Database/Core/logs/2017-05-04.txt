@@ -1,0 +1,27 @@
+Time : 11:23:51
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-dd96b5621fc90e63d26cfd0779e6ad76' for key 'PRIMARY'
+Raw SQL : INSERT INTO adgsoft_maps.user_machines(user_id, fingerprint, data) VALUES(:uid,:fg,:data)
+
+Time : 11:21:58
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-dd96b5621fc90e63d26cfd0779e6ad76' for key 'PRIMARY'
+Raw SQL : INSERT INTO adgsoft_maps.user_machines(user_id, fingerprint, data) VALUES(:uid,:fg,:data)
+
+Time : 11:21:28
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-dd96b5621fc90e63d26cfd0779e6ad76' for key 'PRIMARY'
+Raw SQL : INSERT INTO adgsoft_maps.user_machines(user_id, fingerprint, data) VALUES(:uid,:fg,:data)
+
+Time : 11:21:26
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-dd96b5621fc90e63d26cfd0779e6ad76' for key 'PRIMARY'
+Raw SQL : INSERT INTO adgsoft_maps.user_machines(user_id, fingerprint, data) VALUES(:uid,:fg,:data)
+
+Time : 11:16:39
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-dd96b5621fc90e63d26cfd0779e6ad76' for key 'PRIMARY'
+Raw SQL : INSERT INTO adgsoft_maps.user_machines(user_id, fingerprint, data) VALUES(:uid,:fg,:data)
+
+Time : 10:48:23
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Raw SQL : INSERT INTO adgsoft_maps.user_machines(user_id, fingerprint, data) VALUES(:uid,:fg,:data)
+
+Time : 10:46:53
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Raw SQL : INSERT INTO adgsoft_maps.user_machines(user_id, fingerprint, data) VALUES(:uid,:fg,:data)

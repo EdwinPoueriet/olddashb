@@ -1,0 +1,59 @@
+generateDonutChart (data) {
+        let realData = {};
+        let keys = [];
+
+        data.forEach(function(e, index) {
+          const key = e.seller_code;
+              keys.push(key);
+              realData[key] = e.cantidad_pedidos;
+
+        })
+
+
+//        console.log(realData, keys)
+        donutChart = c3.generate({
+          bindto: '#donut-graph',
+          color: {
+//            pattern: ['#1f77b4', '#ff7f0e','#8bc34a']
+          },
+          data: {
+            json: [ realData ],
+            keys: {
+              value: keys,
+            },
+            order: null,
+            type : 'donut',
+            onmouseover: function (d, i) {
+              chart.tooltip.show({x: d.index})
+            },
+          },
+          legend: {
+            show: false
+          },
+
+          donut: {
+            title: "Vendedor",
+            label: {
+              format: function (value, ratio, id) {
+                return 'V-'+id;
+              },
+              threshold: 0.01
+            }
+          },
+          tooltip: {
+            format : {
+              value : function (v) {
+                return v + ' Pedidos'
+              },
+              name: function (name, ratio, id, index) {
+                const el = data.find(function (val) {
+                  return val.seller_code === id;
+                })
+                return el.seller_name;
+              }
+
+            }
+          }
+        });
+
+      }
